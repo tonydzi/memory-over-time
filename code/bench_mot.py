@@ -420,7 +420,7 @@ def judge(system: str, run: str):
         v = chat(JUDGE_MODEL, [{"role": "system", "content": JUDGE_SYS},
                                {"role": "user", "content": f"Question: {q['question']}\nGold answer: {q['gold']}\nGenerated answer: {ans[qid]}\nVerdict:"}],
                  max_tokens=10)
-        write(out, {"qid": qid, "label": "CORRECT" if "CORRECT" in v.upper() and "INCORRECT" not in v.upper() else "WRONG",
+        write(out, {"qid": qid, "label": "CORRECT" if v.strip().upper().rstrip(".").startswith("CORRECT") else "WRONG",  # strict: "not correct" -> WRONG
                     "raw": v[:40]})
     todo = [k for k in ans if k not in have]
     with cf.ThreadPoolExecutor(int(os.environ.get("PAR", "6"))) as ex:

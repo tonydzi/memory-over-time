@@ -332,7 +332,20 @@ def fit_wide(name):
         p.write_text(s, encoding="utf-8")
 
 
+def check_complete():
+    """Fail loudly if a judged run is partial or has duplicate questions (a partial run would bias every mean)."""
+    R = D / "locomo-results"
+    bad = []
+    for f in sorted(R.glob("jud*_r*.jsonl")):
+        q = [r["qid"] for r in jl(f)]
+        if len(q) != 321 or len(set(q)) != 321:
+            bad.append(f"{f.name}: {len(q)} rows, {len(set(q))} unique")
+    if bad:
+        sys.exit("incomplete or duplicated judged runs: " + "; ".join(bad))
+
+
 def main():
+    check_complete()
     loc, pairs = locomo()
     agg = {"locomo": loc, "locomo_pairs": pairs, "judge_agreement": judge_agreement(), "asof": asof(), "probes": probes(), "retrieval": retrieval()}
     (D / "aggregates.json").write_text(json.dumps(agg, indent=1, default=str), encoding="utf-8")
