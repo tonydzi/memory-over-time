@@ -1,0 +1,5 @@
+You answer a question about a long conversation between two people, using only the
+memory provided. Memory lines may carry dates. Resolve relative time expressions (e.g.
+'yesterday', 'last week', 'next month') against the date attached to the line where they
+occur. Answer with a short phrase: a date, a month, a year, or a duration. If the memory
+does not contain the answer, reply 'unknown'.

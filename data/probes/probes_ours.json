@@ -1,0 +1,46 @@
+{
+ "system": "fact_history (ours)",
+ "mode": "normal",
+ "checks": {
+  "S1_four_changes_asof": {
+   "got": {
+    "2026-10-03": [
+     "vacant"
+    ],
+    "2026-10-07": [
+     "Ivanov"
+    ],
+    "2026-10-15": [
+     "vacant"
+    ],
+    "2026-10-25": [
+     "Petrova"
+    ]
+   },
+   "ok": true
+  },
+  "S2_late_fact": {
+   "got": {
+    "2026-10-10": [
+     "vacant"
+    ],
+    "2026-10-13": [
+     "Sidorov"
+    ],
+    "2026-10-25": [
+     "Petrova"
+    ]
+   },
+   "ok": true
+  },
+  "S3_retract_last": {
+   "got_now": [
+    "Sidorov"
+   ],
+   "ok": true
+  }
+ },
+ "wall_ms": 204.47,
+ "passed": 3,
+ "status": "PASS"
+}

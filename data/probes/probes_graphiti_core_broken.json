@@ -1,0 +1,68 @@
+{
+ "checks": {
+  "S1_four_changes_asof": {
+   "got": {
+    "2026-10-03": [
+     "Room 402 is vacant"
+    ],
+    "2026-10-07": [
+     "Ivanov checked into room 402",
+     "Room 402 is vacant"
+    ],
+    "2026-10-15": [
+     "Ivanov checked into room 402",
+     "Room 402 is vacant",
+     "Room 402 is vacant again"
+    ],
+    "2026-10-25": [
+     "Ivanov checked into room 402",
+     "Petrova checked into room 402",
+     "Room 402 is vacant",
+     "Room 402 is vacant again"
+    ]
+   },
+   "ok": false
+  },
+  "S1_history_persisted": {
+   "edges_in_db": 4,
+   "ok": true
+  },
+  "S2_late_fact": {
+   "got": {
+    "2026-10-10": [
+     "Ivanov checked into room 402",
+     "Room 402 is vacant",
+     "Room 402 is vacant again"
+    ],
+    "2026-10-13": [
+     "Ivanov checked into room 402",
+     "Room 402 is vacant",
+     "Room 402 is vacant again",
+     "Sidorov stayed in room 402 (late report)"
+    ],
+    "2026-10-25": [
+     "Ivanov checked into room 402",
+     "Petrova checked into room 402",
+     "Room 402 is vacant",
+     "Room 402 is vacant again",
+     "Sidorov stayed in room 402 (late report)"
+    ]
+   },
+   "note": "вставка в середину: 12.10 должен быть Sidorov, 25.10 по-прежнему Petrova",
+   "ok": false
+  },
+  "S3_retract_last": {
+   "got_now": [
+    "Ivanov checked into room 402",
+    "Room 402 is vacant",
+    "Room 402 is vacant again",
+    "Sidorov stayed in room 402 (late report)"
+   ],
+   "expected_by_meaning": "previous state (Sidorov), not an empty room",
+   "ok": false
+  }
+ },
+ "graphiti_core": "0.31.2",
+ "status": "FAIL",
+ "mode": "broken (no invalidation)"
+}

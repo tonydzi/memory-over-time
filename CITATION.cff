@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use tonydzi/memory-over-time in research or software, please cite it as below."
+title: "Memory over Time: as-of queries, late facts and retractions in LLM agent memory (benchmark)"
+type: software
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/tonydzi/memory-over-time"
+url: "https://github.com/tonydzi/memory-over-time"
+abstract: >-
+  Benchmark harness and raw outputs for as-of queries, late facts and retractions in LLM agent memory: Mem0 OSS, Graphiti (Zep core), a read-time bitemporal fact log and full context on the LoCoMo temporal subset, plus scripted retraction probes.

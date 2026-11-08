@@ -1,0 +1,404 @@
+{
+ "system": "graphiti-0.31.2 + cliproxy claude-haiku-5-5",
+ "embedder": "hash-bow-256 (смок, не качество поиска)",
+ "episodes": [
+  {
+   "name": "lead-01-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-01-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-02-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-02-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-03-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-03-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-04-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-04-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-05-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-05-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-06-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-06-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-07-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-07-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-08-temperature-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-08-temperature-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-09-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-09-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-10-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-10-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-11-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-11-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-12-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-12-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-13-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-13-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-14-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-14-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-15-reactivation_band-old",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  },
+  {
+   "name": "lead-15-reactivation_band-new",
+   "ok": false,
+   "err": "InternalServerError: Error code: 503 - auth_unavailable: no auth available (providers=claude, model=claude-haiku-5-5; last upstream error: token: [REDACTED] \"error_description\": \"Refresh token: [REDACTED]); check Claude a"
+  }
+ ],
+ "items": [
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T01:50:05.777000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T03:50:05.777000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T01:50:05.791000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T03:50:05.791000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T01:50:05.792000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T03:50:05.792000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T01:50:05.796000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T03:50:05.796000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T01:50:05.806000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T03:50:05.806000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T01:50:05.811000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T03:50:05.811000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T01:50:05.821000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T03:50:05.821000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T01:50:05.829000Z?",
+   "gold": "T4_hot",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T03:50:05.829000Z?",
+   "gold": "T4d_cooled",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T01:50:05.839000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T03:50:05.839000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T01:50:05.841000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T03:50:05.841000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T01:50:05.853000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T03:50:05.853000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T01:50:05.857000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T03:50:05.857000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T01:50:05.870000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T03:50:05.870000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T01:50:05.885000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T03:50:05.885000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T01:50:05.890000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T03:50:05.890000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [],
+   "mem_ok": false
+  }
+ ],
+ "edges": [],
+ "memory_correct": 0,
+ "questions": 30,
+ "correct": 0,
+ "episodes_ok": 0,
+ "wall_sec": 46.0
+}

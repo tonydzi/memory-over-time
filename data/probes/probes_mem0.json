@@ -1,0 +1,116 @@
+{
+ "system": "mem0-oss-2.2.1 infer=True",
+ "extract_model": "gemini-3-flash",
+ "reader_model": "gpt-6-sol",
+ "runs": [
+  {
+   "run": "r1",
+   "checks": {
+    "S1_four_changes_asof": {
+     "got": {
+      "3 October 2026": "vacant",
+      "7 October 2026": "Ivanov",
+      "15 October 2026": "vacant",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S2_late_fact": {
+     "got": {
+      "10 October 2026": "vacant",
+      "13 October 2026": "Sidorov",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S3_retract_last": {
+     "got": "Sidorov",
+     "ctx": "- [1 October 2026] According to the front desk log dated October 1, 2026, room 402 was vacant\n- [9 October 2026] According to the front desk log dated October 9, 2026, Mr. Ivanov checked out of room 402 and the room is vacant again\n- [5 November 2026] According to a late report from the night shift, Mr. Sidorov checked into room 402 on October 12, 2026, which was previously missing from the front desk log\n- [6 November 2026] According to a correction made on November 6, 2026, the front desk log entry stating Ms. Petrova checked into room 402 on October 20, 2026 was an operator error and she never stayed in that room\n- [5 October 2026] According to the front desk log dated October 5, 2026, Mr. Ivanov checked into room 402\n- [20 October 2026] According to the front desk log dated October 20, 2026, Ms. Petrova checked into room 402",
+     "ok": true
+    }
+   },
+   "memories_after": [
+    "According to the front desk log dated October 1, 2026, room 402 was vacant",
+    "According to the front desk log dated October 9, 2026, Mr. Ivanov checked out of room 402 and the room is vacant again",
+    "According to a correction made on November 6, 2026, the front desk log entry stating Ms. Petrova checked into room 402 on October 20, 2026 was an operator error and she never stayed in that room",
+    "According to the front desk log dated October 5, 2026, Mr. Ivanov checked into room 402",
+    "According to a late report from the night shift, Mr. Sidorov checked into room 402 on October 12, 2026, which was previously missing from the front desk log",
+    "According to the front desk log dated October 20, 2026, Ms. Petrova checked into room 402"
+   ],
+   "passed": 3
+  },
+  {
+   "run": "r2",
+   "checks": {
+    "S1_four_changes_asof": {
+     "got": {
+      "3 October 2026": "vacant",
+      "7 October 2026": "Ivanov",
+      "15 October 2026": "vacant",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S2_late_fact": {
+     "got": {
+      "10 October 2026": "vacant",
+      "13 October 2026": "Sidorov",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S3_retract_last": {
+     "got": "Sidorov",
+     "ctx": "- [1 October 2026] According to the front desk log dated October 1, 2026, room 402 was vacant\n- [9 October 2026] According to the front desk log dated October 9, 2026, Mr. Ivanov checked out and room 402 is vacant again\n- [5 November 2026] According to a late report from the night shift dated November 5, 2026, Mr. Sidorov checked into room 402 on October 12, 2026, which was missing from the original front desk log\n- [6 November 2026] According to a correction made on November 6, 2026, the front desk log entry stating that Ms. Petrova checked into room 402 on October 20, 2026, was an operator error and she never stayed in that room\n- [5 October 2026] According to the front desk log dated October 5, 2026, Mr. Ivanov checked into room 402\n- [20 October 2026] According to the front desk log dated October 20, 2026, Ms. Petrova checked into room 402",
+     "ok": true
+    }
+   },
+   "memories_after": [
+    "According to a late report from the night shift dated November 5, 2026, Mr. Sidorov checked into room 402 on October 12, 2026, which was missing from the original front desk log",
+    "According to the front desk log dated October 9, 2026, Mr. Ivanov checked out and room 402 is vacant again",
+    "According to the front desk log dated October 1, 2026, room 402 was vacant",
+    "According to a correction made on November 6, 2026, the front desk log entry stating that Ms. Petrova checked into room 402 on October 20, 2026, was an operator error and she never stayed in that room",
+    "According to the front desk log dated October 20, 2026, Ms. Petrova checked into room 402",
+    "According to the front desk log dated October 5, 2026, Mr. Ivanov checked into room 402"
+   ],
+   "passed": 3
+  },
+  {
+   "run": "r3",
+   "checks": {
+    "S1_four_changes_asof": {
+     "got": {
+      "3 October 2026": "vacant",
+      "7 October 2026": "Ivanov",
+      "15 October 2026": "vacant",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S2_late_fact": {
+     "got": {
+      "10 October 2026": "vacant",
+      "13 October 2026": "Sidorov",
+      "25 October 2026": "Petrova"
+     },
+     "ok": true
+    },
+    "S3_retract_last": {
+     "got": "Sidorov",
+     "ctx": "- [1 October 2026] According to the front desk log, room 402 was vacant as of October 1, 2026\n- [9 October 2026] According to the front desk log, Mr. Ivanov checked out of room 402 on October 9, 2026, leaving the room vacant again\n- [5 November 2026] According to a late night shift report, Mr. Sidorov checked into room 402 on October 12, 2026, which was previously missing from the front desk log\n- [6 November 2026] According to a correction issued on November 6, 2026, the front desk log entry stating that Ms. Petrova checked into room 402 on October 20, 2026, was an operator error and she never stayed in that room\n- [5 October 2026] According to the front desk log, Mr. Ivanov checked into room 402 on October 5, 2026\n- [20 October 2026] According to the front desk log, Ms. Petrova checked into room 402 on October 20, 2026",
+     "ok": true
+    }
+   },
+   "memories_after": [
+    "According to the front desk log, Mr. Ivanov checked out of room 402 on October 9, 2026, leaving the room vacant again",
+    "According to a late night shift report, Mr. Sidorov checked into room 402 on October 12, 2026, which was previously missing from the front desk log",
+    "According to the front desk log, Mr. Ivanov checked into room 402 on October 5, 2026",
+    "According to the front desk log, Ms. Petrova checked into room 402 on October 20, 2026",
+    "According to the front desk log, room 402 was vacant as of October 1, 2026",
+    "According to a correction issued on November 6, 2026, the front desk log entry stating that Ms. Petrova checked into room 402 on October 20, 2026, was an operator error and she never stayed in that room"
+   ],
+   "passed": 3
+  }
+ ],
+ "ts": "2026-11-08T14:55:35Z"
+}

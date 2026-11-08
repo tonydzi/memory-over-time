@@ -1,0 +1,801 @@
+{
+ "system": "graphiti-0.31.2 + cliproxy grok-4.7",
+ "embedder": "hash-bow-256 (смок, не качество поиска)",
+ "episodes": [
+  {
+   "name": "lead-01-reactivation_band-old",
+   "sec": 29.3,
+   "ok": true
+  },
+  {
+   "name": "lead-01-reactivation_band-new",
+   "sec": 23.2,
+   "ok": true
+  },
+  {
+   "name": "lead-02-reactivation_band-old",
+   "sec": 28.0,
+   "ok": true
+  },
+  {
+   "name": "lead-02-reactivation_band-new",
+   "sec": 27.6,
+   "ok": true
+  },
+  {
+   "name": "lead-03-reactivation_band-old",
+   "sec": 19.7,
+   "ok": true
+  },
+  {
+   "name": "lead-03-reactivation_band-new",
+   "sec": 43.4,
+   "ok": true
+  },
+  {
+   "name": "lead-04-reactivation_band-old",
+   "sec": 21.1,
+   "ok": true
+  },
+  {
+   "name": "lead-04-reactivation_band-new",
+   "sec": 37.4,
+   "ok": true
+  },
+  {
+   "name": "lead-05-reactivation_band-old",
+   "sec": 22.2,
+   "ok": true
+  },
+  {
+   "name": "lead-05-reactivation_band-new",
+   "sec": 24.9,
+   "ok": true
+  },
+  {
+   "name": "lead-06-reactivation_band-old",
+   "sec": 17.3,
+   "ok": true
+  },
+  {
+   "name": "lead-06-reactivation_band-new",
+   "sec": 26.8,
+   "ok": true
+  },
+  {
+   "name": "lead-07-reactivation_band-old",
+   "sec": 17.4,
+   "ok": true
+  },
+  {
+   "name": "lead-07-reactivation_band-new",
+   "sec": 22.2,
+   "ok": true
+  },
+  {
+   "name": "lead-08-temperature-old",
+   "sec": 23.3,
+   "ok": true
+  },
+  {
+   "name": "lead-08-temperature-new",
+   "sec": 17.7,
+   "ok": true
+  },
+  {
+   "name": "lead-09-reactivation_band-old",
+   "sec": 19.3,
+   "ok": true
+  },
+  {
+   "name": "lead-09-reactivation_band-new",
+   "sec": 41.1,
+   "ok": true
+  },
+  {
+   "name": "lead-10-reactivation_band-old",
+   "sec": 18.6,
+   "ok": true
+  },
+  {
+   "name": "lead-10-reactivation_band-new",
+   "sec": 26.0,
+   "ok": true
+  },
+  {
+   "name": "lead-11-reactivation_band-old",
+   "sec": 9.0,
+   "ok": true
+  },
+  {
+   "name": "lead-11-reactivation_band-new",
+   "sec": 22.0,
+   "ok": true
+  },
+  {
+   "name": "lead-12-reactivation_band-old",
+   "sec": 22.9,
+   "ok": true
+  },
+  {
+   "name": "lead-12-reactivation_band-new",
+   "sec": 25.4,
+   "ok": true
+  },
+  {
+   "name": "lead-13-reactivation_band-old",
+   "sec": 28.7,
+   "ok": true
+  },
+  {
+   "name": "lead-13-reactivation_band-new",
+   "sec": 24.4,
+   "ok": true
+  },
+  {
+   "name": "lead-14-reactivation_band-old",
+   "sec": 17.8,
+   "ok": true
+  },
+  {
+   "name": "lead-14-reactivation_band-new",
+   "sec": 13.6,
+   "ok": true
+  },
+  {
+   "name": "lead-15-reactivation_band-old",
+   "sec": 19.9,
+   "ok": true
+  },
+  {
+   "name": "lead-15-reactivation_band-new",
+   "sec": 18.9,
+   "ok": true
+  }
+ ],
+ "items": [
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T01:50:05.777000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "all_facts": [
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000",
+    "Lead lead-01 now has reactivation_band This month. | 2026-11-05 02:50:05.777000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T03:50:05.777000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-01 now has reactivation_band This month. | 2026-11-05 02:50:05.777000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000",
+    "Lead lead-01 now has reactivation_band This month. | 2026-11-05 02:50:05.777000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T01:50:05.791000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02's reactivation_band is Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-02 has reactivation_band Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000"
+   ],
+   "all_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02's reactivation_band is Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-02 has reactivation_band Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-02 now has reactivation_band This month. | 2026-11-05 02:50:05.791000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T03:50:05.791000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02 now has reactivation_band This month. | 2026-11-05 02:50:05.791000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02's reactivation_band is Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-02 has reactivation_band Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-02 now has reactivation_band This month. | 2026-11-05 02:50:05.791000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T01:50:05.792000Z?",
+   "gold": "Now",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000"
+   ],
+   "all_facts": [
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-03 now has reactivation_band This week. | 2026-11-05 02:50:05.792000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T03:50:05.792000Z?",
+   "gold": "This week",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-03 now has reactivation_band This week. | 2026-11-05 02:50:05.792000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-03 now has reactivation_band This week. | 2026-11-05 02:50:05.792000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T01:50:05.796000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-04 has reactivation_band This month. | 2026-11-04 02:50:05.796000 -> 2026-11-05 02:50:05.796000"
+   ],
+   "all_facts": [
+    "Lead lead-04 has reactivation_band This month. | 2026-11-04 02:50:05.796000 -> 2026-11-05 02:50:05.796000",
+    "Lead lead-04 has reactivation_band Park. | 2026-11-05 02:50:05.796000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T03:50:05.796000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-04 has reactivation_band Park. | 2026-11-05 02:50:05.796000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-04 has reactivation_band This month. | 2026-11-04 02:50:05.796000 -> 2026-11-05 02:50:05.796000",
+    "Lead lead-04 has reactivation_band Park. | 2026-11-05 02:50:05.796000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T01:50:05.806000Z?",
+   "gold": "This week",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-05 has reactivation_band This week. | 2026-11-04 02:50:05.806000 -> 2026-11-05 02:50:05.806000"
+   ],
+   "all_facts": [
+    "Lead lead-05 has reactivation_band This week. | 2026-11-04 02:50:05.806000 -> 2026-11-05 02:50:05.806000",
+    "Lead lead-05 now has reactivation_band This month. | 2026-11-05 02:50:05.806000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T03:50:05.806000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-05 now has reactivation_band This month. | 2026-11-05 02:50:05.806000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-05 has reactivation_band This week. | 2026-11-04 02:50:05.806000 -> 2026-11-05 02:50:05.806000",
+    "Lead lead-05 now has reactivation_band This month. | 2026-11-05 02:50:05.806000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T01:50:05.811000Z?",
+   "gold": "This week",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-06 has reactivation_band This week. | 2026-11-04 02:50:05.811000 -> 2026-11-05 02:50:05.811000"
+   ],
+   "all_facts": [
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-06 has reactivation_band This week. | 2026-11-04 02:50:05.811000 -> 2026-11-05 02:50:05.811000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T03:50:05.811000Z?",
+   "gold": "Now",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-06 has reactivation_band This week. | 2026-11-04 02:50:05.811000 -> 2026-11-05 02:50:05.811000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T01:50:05.821000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-07 now has reactivation_band This month. | 2026-11-05 02:50:05.821000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T03:50:05.821000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-07 now has reactivation_band This month. | 2026-11-05 02:50:05.821000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-07 now has reactivation_band This month. | 2026-11-05 02:50:05.821000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T01:50:05.829000Z?",
+   "gold": "T4_hot",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02's reactivation_band is Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T03:50:05.829000Z?",
+   "gold": "T4d_cooled",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-02 has a reactivation_band. | 2026-11-04 02:50:05.791000 -> None",
+    "Lead lead-02's reactivation_band is Park. | 2026-11-04 02:50:05.791000 -> 2026-11-05 02:50:05.791000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T01:50:05.839000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-09 has reactivation_band This month. | 2026-11-04 02:50:05.839000 -> 2026-11-05 02:50:05.839000"
+   ],
+   "all_facts": [
+    "Lead lead-09 has reactivation_band This month. | 2026-11-04 02:50:05.839000 -> 2026-11-05 02:50:05.839000",
+    "Lead lead-09 now has reactivation_band Park. | 2026-11-05 02:50:05.839000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T03:50:05.839000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-09 now has reactivation_band Park. | 2026-11-05 02:50:05.839000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-09 has reactivation_band This month. | 2026-11-04 02:50:05.839000 -> 2026-11-05 02:50:05.839000",
+    "Lead lead-09 now has reactivation_band Park. | 2026-11-05 02:50:05.839000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T01:50:05.841000Z?",
+   "gold": "This week",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-10 has reactivation_band This week. | 2026-11-04 02:50:05.841000 -> 2026-11-05 02:50:05.841000"
+   ],
+   "all_facts": [
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-10 has reactivation_band This week. | 2026-11-04 02:50:05.841000 -> 2026-11-05 02:50:05.841000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T03:50:05.841000Z?",
+   "gold": "Now",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-10 has reactivation_band This week. | 2026-11-04 02:50:05.841000 -> 2026-11-05 02:50:05.841000",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T01:50:05.853000Z?",
+   "gold": "Now",
+   "ok": false,
+   "live_facts": [
+    "Lead lead-12 has reactivation_band This month. | 2026-11-04 02:50:05.857000 -> 2026-11-05 02:50:05.857000"
+   ],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T03:50:05.853000Z?",
+   "gold": "This week",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T01:50:05.857000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-12 has reactivation_band This month. | 2026-11-04 02:50:05.857000 -> 2026-11-05 02:50:05.857000"
+   ],
+   "all_facts": [
+    "Lead lead-12 has reactivation_band This month. | 2026-11-04 02:50:05.857000 -> 2026-11-05 02:50:05.857000",
+    "Lead lead-12 now has reactivation_band Park. | 2026-11-05 02:50:05.857000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T03:50:05.857000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-12 now has reactivation_band Park. | 2026-11-05 02:50:05.857000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-12 has reactivation_band This month. | 2026-11-04 02:50:05.857000 -> 2026-11-05 02:50:05.857000",
+    "Lead lead-12 now has reactivation_band Park. | 2026-11-05 02:50:05.857000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T01:50:05.870000Z?",
+   "gold": "This month",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-13 has reactivation_band This month. | 2026-11-04 02:50:05.870000 -> 2026-11-05 02:50:05.870000"
+   ],
+   "all_facts": [
+    "Lead lead-13 has reactivation_band This month. | 2026-11-04 02:50:05.870000 -> 2026-11-05 02:50:05.870000",
+    "Lead lead-13 now has reactivation_band Park. | 2026-11-05 02:50:05.870000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T03:50:05.870000Z?",
+   "gold": "Park",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-13 now has reactivation_band Park. | 2026-11-05 02:50:05.870000 -> None"
+   ],
+   "all_facts": [
+    "Lead lead-13 has reactivation_band This month. | 2026-11-04 02:50:05.870000 -> 2026-11-05 02:50:05.870000",
+    "Lead lead-13 now has reactivation_band Park. | 2026-11-05 02:50:05.870000 -> None",
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T01:50:05.885000Z?",
+   "gold": "This month",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T03:50:05.885000Z?",
+   "gold": "Park",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": false
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T01:50:05.890000Z?",
+   "gold": "Now",
+   "ok": true,
+   "live_facts": [
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000"
+   ],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": true
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T03:50:05.890000Z?",
+   "gold": "This week",
+   "ok": false,
+   "live_facts": [],
+   "all_facts": [
+    "Lead lead-11 now has reactivation_band This week. | 2026-11-05 02:50:05.853000 -> None",
+    "Lead lead-03 has reactivation_band Now. | 2026-11-04 02:50:05.792000 -> 2026-11-05 02:50:05.792000",
+    "Lead lead-06 now has reactivation_band Now. | 2026-11-05 02:50:05.811000 -> None",
+    "Lead lead-10 now has reactivation_band Now. | 2026-11-05 02:50:05.841000 -> None",
+    "Lead lead-15 has reactivation_band Now. | 2026-11-04 02:50:05.890000 -> 2026-11-05 02:50:05.890000",
+    "Lead lead-01 has reactivation_band Park. | 2026-11-04 02:50:05.777000 -> 2026-11-05 02:50:05.777000"
+   ],
+   "mem_ok": true
+  }
+ ],
+ "edges": [
+  {
+   "fact": "Lead lead-01 has reactivation_band Park.",
+   "valid_at": "2026-11-04 02:50:05.777000",
+   "invalid_at": "2026-11-05 02:50:05.777000"
+  },
+  {
+   "fact": "Lead lead-02 has reactivation_band Park.",
+   "valid_at": "2026-11-04 02:50:05.791000",
+   "invalid_at": "2026-11-05 02:50:05.791000"
+  },
+  {
+   "fact": "Lead lead-02's reactivation_band is Park.",
+   "valid_at": "2026-11-04 02:50:05.791000",
+   "invalid_at": "2026-11-05 02:50:05.791000"
+  },
+  {
+   "fact": "Lead lead-04 has reactivation_band Park.",
+   "valid_at": "2026-11-05 02:50:05.796000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-09 now has reactivation_band Park.",
+   "valid_at": "2026-11-05 02:50:05.839000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-12 now has reactivation_band Park.",
+   "valid_at": "2026-11-05 02:50:05.857000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-13 now has reactivation_band Park.",
+   "valid_at": "2026-11-05 02:50:05.870000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-01 now has reactivation_band This month.",
+   "valid_at": "2026-11-05 02:50:05.777000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-02 has a reactivation_band.",
+   "valid_at": "2026-11-04 02:50:05.791000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-02 now has reactivation_band This month.",
+   "valid_at": "2026-11-05 02:50:05.791000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-03 has reactivation_band Now.",
+   "valid_at": "2026-11-04 02:50:05.792000",
+   "invalid_at": "2026-11-05 02:50:05.792000"
+  },
+  {
+   "fact": "Lead lead-03 now has reactivation_band This week.",
+   "valid_at": "2026-11-05 02:50:05.792000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-04 has reactivation_band This month.",
+   "valid_at": "2026-11-04 02:50:05.796000",
+   "invalid_at": "2026-11-05 02:50:05.796000"
+  },
+  {
+   "fact": "Lead lead-05 has reactivation_band This week.",
+   "valid_at": "2026-11-04 02:50:05.806000",
+   "invalid_at": "2026-11-05 02:50:05.806000"
+  },
+  {
+   "fact": "Lead lead-05 now has reactivation_band This month.",
+   "valid_at": "2026-11-05 02:50:05.806000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-06 has reactivation_band This week.",
+   "valid_at": "2026-11-04 02:50:05.811000",
+   "invalid_at": "2026-11-05 02:50:05.811000"
+  },
+  {
+   "fact": "Lead lead-06 now has reactivation_band Now.",
+   "valid_at": "2026-11-05 02:50:05.811000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-07 now has reactivation_band This month.",
+   "valid_at": "2026-11-05 02:50:05.821000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-09 has reactivation_band This month.",
+   "valid_at": "2026-11-04 02:50:05.839000",
+   "invalid_at": "2026-11-05 02:50:05.839000"
+  },
+  {
+   "fact": "Lead lead-10 has reactivation_band This week.",
+   "valid_at": "2026-11-04 02:50:05.841000",
+   "invalid_at": "2026-11-05 02:50:05.841000"
+  },
+  {
+   "fact": "Lead lead-10 now has reactivation_band Now.",
+   "valid_at": "2026-11-05 02:50:05.841000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-11 now has reactivation_band This week.",
+   "valid_at": "2026-11-05 02:50:05.853000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-12 has reactivation_band This month.",
+   "valid_at": "2026-11-04 02:50:05.857000",
+   "invalid_at": "2026-11-05 02:50:05.857000"
+  },
+  {
+   "fact": "Lead lead-13 has reactivation_band This month.",
+   "valid_at": "2026-11-04 02:50:05.870000",
+   "invalid_at": "2026-11-05 02:50:05.870000"
+  },
+  {
+   "fact": "Lead lead-14 has reactivation_band This month.",
+   "valid_at": "2026-11-04 02:50:05.885000",
+   "invalid_at": "None"
+  },
+  {
+   "fact": "Lead lead-15 has reactivation_band Now.",
+   "valid_at": "2026-11-04 02:50:05.890000",
+   "invalid_at": "2026-11-05 02:50:05.890000"
+  },
+  {
+   "fact": "Lead lead-15 now has reactivation_band This week.",
+   "valid_at": "2026-11-05 02:50:05.890000",
+   "invalid_at": "None"
+  }
+ ],
+ "memory_correct": 23,
+ "questions": 30,
+ "correct": 23,
+ "episodes_ok": 30,
+ "wall_sec": 710.0
+}

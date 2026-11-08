@@ -1,0 +1,309 @@
+{
+ "source": "leads.db object_history",
+ "changes": 15,
+ "questions": 30,
+ "correct": 30,
+ "p50_ms": 0.01,
+ "items": [
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T01:50:05.777000Z?",
+   "subject": "leads:lead-01",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.777000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.06
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-01 at 2026-11-05T03:50:05.777000Z?",
+   "subject": "leads:lead-01",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.777000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T01:50:05.791000Z?",
+   "subject": "leads:lead-02",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.791000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.02
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-02 at 2026-11-05T03:50:05.791000Z?",
+   "subject": "leads:lead-02",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.791000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T01:50:05.792000Z?",
+   "subject": "leads:lead-03",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.792000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-03 at 2026-11-05T03:50:05.792000Z?",
+   "subject": "leads:lead-03",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.792000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T01:50:05.796000Z?",
+   "subject": "leads:lead-04",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.796000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-04 at 2026-11-05T03:50:05.796000Z?",
+   "subject": "leads:lead-04",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.796000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T01:50:05.806000Z?",
+   "subject": "leads:lead-05",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.806000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-05 at 2026-11-05T03:50:05.806000Z?",
+   "subject": "leads:lead-05",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.806000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T01:50:05.811000Z?",
+   "subject": "leads:lead-06",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.811000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-06 at 2026-11-05T03:50:05.811000Z?",
+   "subject": "leads:lead-06",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.811000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T01:50:05.821000Z?",
+   "subject": "leads:lead-07",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.821000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-07 at 2026-11-05T03:50:05.821000Z?",
+   "subject": "leads:lead-07",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.821000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T01:50:05.829000Z?",
+   "subject": "leads:lead-08",
+   "field": "temperature",
+   "at": "2026-11-05T01:50:05.829000Z",
+   "gold": "T4_hot",
+   "answer": "T4_hot",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the temperature of lead lead-08 at 2026-11-05T03:50:05.829000Z?",
+   "subject": "leads:lead-08",
+   "field": "temperature",
+   "at": "2026-11-05T03:50:05.829000Z",
+   "gold": "T4d_cooled",
+   "answer": "T4d_cooled",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T01:50:05.839000Z?",
+   "subject": "leads:lead-09",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.839000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-09 at 2026-11-05T03:50:05.839000Z?",
+   "subject": "leads:lead-09",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.839000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T01:50:05.841000Z?",
+   "subject": "leads:lead-10",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.841000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-10 at 2026-11-05T03:50:05.841000Z?",
+   "subject": "leads:lead-10",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.841000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T01:50:05.853000Z?",
+   "subject": "leads:lead-11",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.853000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.05
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-11 at 2026-11-05T03:50:05.853000Z?",
+   "subject": "leads:lead-11",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.853000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T01:50:05.857000Z?",
+   "subject": "leads:lead-12",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.857000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-12 at 2026-11-05T03:50:05.857000Z?",
+   "subject": "leads:lead-12",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.857000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T01:50:05.870000Z?",
+   "subject": "leads:lead-13",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.870000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-13 at 2026-11-05T03:50:05.870000Z?",
+   "subject": "leads:lead-13",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.870000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T01:50:05.885000Z?",
+   "subject": "leads:lead-14",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.885000Z",
+   "gold": "This month",
+   "answer": "This month",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-14 at 2026-11-05T03:50:05.885000Z?",
+   "subject": "leads:lead-14",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.885000Z",
+   "gold": "Park",
+   "answer": "Park",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T01:50:05.890000Z?",
+   "subject": "leads:lead-15",
+   "field": "reactivation_band",
+   "at": "2026-11-05T01:50:05.890000Z",
+   "gold": "Now",
+   "answer": "Now",
+   "ok": true,
+   "ms": 0.01
+  },
+  {
+   "q": "What was the reactivation_band of lead lead-15 at 2026-11-05T03:50:05.890000Z?",
+   "subject": "leads:lead-15",
+   "field": "reactivation_band",
+   "at": "2026-11-05T03:50:05.890000Z",
+   "gold": "This week",
+   "answer": "This week",
+   "ok": true,
+   "ms": 0.01
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "checks": {
+  "S1_four_changes_asof": {
+   "got": {
+    "2026-10-03": [
+     "Room 402 is vacant"
+    ],
+    "2026-10-07": [
+     "Ivanov checked into room 402"
+    ],
+    "2026-10-15": [
+     "Room 402 is vacant again"
+    ],
+    "2026-10-25": [
+     "Petrova checked into room 402"
+    ]
+   },
+   "ok": true
+  },
+  "S1_history_persisted": {
+   "edges_in_db": 4,
+   "ok": true
+  },
+  "S2_late_fact": {
+   "got": {
+    "2026-10-10": [
+     "Room 402 is vacant again"
+    ],
+    "2026-10-13": [
+     "Sidorov stayed in room 402 (late report)"
+    ],
+    "2026-10-25": [
+     "Petrova checked into room 402"
+    ]
+   },
+   "note": "вставка в середину: 12.10 должен быть Sidorov, 25.10 по-прежнему Petrova",
+   "ok": true
+  },
+  "S3_retract_last": {
+   "got_now": [],
+   "expected_by_meaning": "previous state (Sidorov), not an empty room",
+   "ok": false
+  }
+ },
+ "graphiti_core": "0.31.2",
+ "status": "FAIL",
+ "mode": "oracle candidates, upstream temporal core"
+}

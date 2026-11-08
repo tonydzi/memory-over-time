@@ -1,0 +1,74 @@
+{
+ "n_answerable": 24,
+ "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04",
+ "systems": {
+  "Mem0 OSS 2.2.1 (dense, infer=False)": {
+   "r@1": 19,
+   "r@5": 23,
+   "r@10": 24,
+   "reported_overall": {
+    "n": 30,
+    "n_answerable": 24,
+    "recall@5": 0.9583333333333334,
+    "recall@10": 1.0
+   },
+   "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04"
+  },
+  "Anima connectome (Jina RTX/MATH)": {
+   "r@1": 17,
+   "r@5": 23,
+   "r@10": 23,
+   "reported_overall": {
+    "n": 30,
+    "n_answerable": 24,
+    "recall@5": 0.9583333333333334,
+    "recall@10": 0.9583333333333334
+   },
+   "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04"
+  },
+  "Our SGM (dense + cross-encoder)": {
+   "r@1": 17,
+   "r@5": 21,
+   "r@10": 24,
+   "reported_overall": {
+    "n": 30,
+    "n_answerable": 24,
+    "recall@5": 0.875,
+    "recall@10": 1.0
+   },
+   "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04"
+  },
+  "SQLite FTS5": {
+   "r@1": 15,
+   "r@5": 21,
+   "r@10": 21,
+   "reported_overall": {
+    "n": 30,
+    "n_answerable": 24,
+    "recall@5": 0.875,
+    "recall@10": 0.875
+   },
+   "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04"
+  },
+  "BM25": {
+   "r@1": 10,
+   "r@5": 15,
+   "r@10": 15,
+   "reported_overall": {
+    "n": 30,
+    "n_answerable": 24,
+    "recall@5": 0.625,
+    "recall@10": 0.625
+   },
+   "gold_sha256": "387cf1b7f9a71e1b118a8d0ae666d144888c1ec138bfa51bc0cbe8626db49b04"
+  },
+  "Our SGM, dense only (ablation)": {
+   "r@1": 19,
+   "r@5": 23,
+   "r@10": 24,
+   "reported_overall": null,
+   "gold_sha256": null,
+   "source": "claude-review/ablation2.json"
+  }
+ }
+}

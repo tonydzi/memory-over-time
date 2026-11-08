@@ -1,0 +1,64 @@
+{
+ "system": "fact_history (ours)",
+ "mode": "broken (no read-time closure)",
+ "checks": {
+  "S1_four_changes_asof": {
+   "got": {
+    "2026-10-03": [
+     "vacant"
+    ],
+    "2026-10-07": [
+     "Ivanov",
+     "vacant"
+    ],
+    "2026-10-15": [
+     "Ivanov",
+     "vacant",
+     "vacant"
+    ],
+    "2026-10-25": [
+     "Ivanov",
+     "Petrova",
+     "vacant",
+     "vacant"
+    ]
+   },
+   "ok": false
+  },
+  "S2_late_fact": {
+   "got": {
+    "2026-10-10": [
+     "Ivanov",
+     "vacant",
+     "vacant"
+    ],
+    "2026-10-13": [
+     "Ivanov",
+     "Sidorov",
+     "vacant",
+     "vacant"
+    ],
+    "2026-10-25": [
+     "Ivanov",
+     "Petrova",
+     "Sidorov",
+     "vacant",
+     "vacant"
+    ]
+   },
+   "ok": false
+  },
+  "S3_retract_last": {
+   "got_now": [
+    "Ivanov",
+    "Sidorov",
+    "vacant",
+    "vacant"
+   ],
+   "ok": false
+  }
+ },
+ "wall_ms": 150.56,
+ "passed": 0,
+ "status": "FAIL"
+}
