@@ -3,6 +3,7 @@
 Benchmark harness, raw outputs and analysis for the paper
 **"Memory over Time: As-of Queries, Late Facts and Retractions in LLM Agent Memory"**
 (Anton Dziatkovskii, Palo Alto AI Research Lab, ORCID 0000-0001-7408-3054).
+Status: submitted to *Transactions on Graph Data and Knowledge* (TGDK), 8 November 2026; under review.
 
 Three questions an agent memory must answer about changing facts:
 
@@ -56,7 +57,7 @@ judge `grok-4.20-0309-non-reasoning`; override with `EXTRACT_MODEL`, `READER_MOD
 
 ## Honest limits
 
-- On LoCoMo temporal questions Mem0 is the best memory we tested; full context is better than every memory.
+- On LoCoMo temporal questions Mem0 is the best memory we tested (76.5% vs 72.2% for the time-stamped log, borderline significance, smaller under a second judge); full context (85.7%) is better than every memory.
 - On plain retrieval Mem0 is at least as good as our retriever (`data/retrieval/`).
 - Graphiti was queried for edges only, without the entity summaries Zep's managed service adds.
 - The CRM as-of set is small (30 questions, two fields of one object type) and shows a failure mode, not a rate.
