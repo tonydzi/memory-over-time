@@ -336,6 +336,10 @@ def check_complete():
     """Fail loudly if a judged run is partial or has duplicate questions (a partial run would bias every mean)."""
     R = D / "locomo-results"
     bad = []
+    expected = {f"{p}_{s}_r{i}.jsonl" for p in ("jud", "jud2")
+                for s in ("full", "mem0", "ours", "graphiti") for i in (1, 2, 3)}
+    present = {f.name for f in R.glob("jud*_r*.jsonl")}
+    bad += [f"{n}: missing" for n in sorted(expected - present)]
     for f in sorted(R.glob("jud*_r*.jsonl")):
         q = [r["qid"] for r in jl(f)]
         if len(q) != 321 or len(set(q)) != 321:
