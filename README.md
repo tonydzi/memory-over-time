@@ -1,4 +1,68 @@
-# Memory over Time
+# memory-over-time
+
+The code, raw results and analysis behind a research paper that tests whether AI agent memory can answer "what was true back then?" and cope with late or withdrawn facts.
+
+**Who it's for:** researchers and engineers building memory for AI agents who want to check the paper's numbers or reuse the tests.
+**What you get:** a benchmark harness, every retrieved context and verdict, and one script that is the only source of the paper's numbers.
+
+## Quick start
+1. Download the repo: `git clone https://github.com/tonydzi/memory-over-time` then `cd memory-over-time`
+2. Run the small memory probe (offline, about a second): `python code/probes_ours.py`
+3. Run the number-checker tests: `python analysis/_test_make_numbers.py`
+
+**Done when:** step 2 ends with `"status": "PASS"` and step 3 prints only lines that start with `ok`.
+
+> Want an AI agent to do it for you? Paste this to Claude Code / Codex / Cursor:
+> "Read the 'For AI agents' section of https://github.com/tonydzi/memory-over-time and set it up for me."
+
+## For AI agents
+
+### Preconditions
+- Python 3.9 or newer. The offline checks below use only the standard library.
+- The full benchmark (not needed for the quick checks) also needs: `mem0ai==2.2.1` and `sentence-transformers` in one venv, `graphiti-core[kuzu]==0.31.2` in another, an OpenAI-compatible LLM endpoint with a key list, and the LoCoMo file `locomo10.json`. Ask the human for the endpoint and keys. Never invent or hardcode keys.
+- LoCoMo is not in this repo. It is licensed CC BY-NC 4.0. Ask the human before downloading it from https://github.com/snap-research/locomo, and check the SHA-256 `79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4`.
+
+### Reproduce
+Offline checks (no network, no keys):
+```bash
+git clone https://github.com/tonydzi/memory-over-time
+cd memory-over-time
+python code/probes_ours.py
+python analysis/_test_make_numbers.py
+```
+Full benchmark, only after the human supplies the endpoint, keys and LoCoMo file (each step is documented in the Reproduce section of Details):
+```bash
+python code/bench_mot.py embed-server
+python code/bench_mot.py ctx-ours
+python code/bench_mot.py ctx-full
+python code/bench_mot.py ingest-mem0 --run r1
+python code/bench_mot.py ingest-graphiti --run r1
+python code/bench_mot.py answer --system mem0 --run r1
+python code/bench_mot.py judge --system mem0 --run r1
+python analysis/make_numbers.py
+```
+
+### Configure
+For the full benchmark only: `PROXY` (in `code/bench_mot.py`, the OpenAI-compatible endpoint), `CLIPROXY_CONFIG` (path to the key list), and optional `EXTRACT_MODEL`, `READER_MODEL`, `JUDGE_MODEL` to override the models used in the paper. The keys come from the human.
+
+### Verify
+```bash
+python code/probes_ours.py
+python analysis/_test_make_numbers.py
+```
+Expected: `probes_ours.py` exits 0 and prints JSON ending with `"passed": 3` and `"status": "PASS"`. The test exits 0 and every line starts with `ok`. Running `python analysis/make_numbers.py` recomputes `data/aggregates.json` from the stored receipts and ends with the line `ok systems ['ours', 'mem0', 'graphiti', 'full'] ...`. Floating-point noise in the last digits of a few time fields is normal.
+
+### Uninstall / rollback
+Delete the cloned folder and any venvs you made. If you ran `make_numbers.py`, undo its rewrite with `git checkout data/aggregates.json` and delete the generated `*.tex` files in the repo root.
+
+### Rules for the agent
+- Run `make_numbers.py` in a throwaway copy: it overwrites `data/aggregates.json` and writes `.tex` files.
+- Do not change numbers by hand. `analysis/make_numbers.py` is the only source of the paper's numbers.
+- Do not redistribute LoCoMo or put its text in new files. Respect the CC BY-NC 4.0 terms.
+- The `data/asof/` receipts use pseudonyms (`lead-01` to `lead-15`). Do not try to re-identify them.
+- Do not call paid LLM endpoints for the full benchmark without the human's yes: it runs many model calls.
+
+## Details
 
 Benchmark harness, raw outputs and analysis for the paper
 **"Memory over Time: As-of Queries, Late Facts and Retractions in LLM Agent Memory"**
