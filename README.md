@@ -10,7 +10,7 @@ The code, raw results and analysis behind a research paper that tests whether AI
 2. Run the small memory probe (offline, about a second): `python code/probes_ours.py`
 3. Run the number-checker tests: `python analysis/_test_make_numbers.py`
 
-**Done when:** step 2 ends with `"status": "PASS"` and step 3 prints only lines that start with `ok`.
+**Done when:** step 2 prints a JSON block that contains `"status": "PASS"`, and every result line of step 3 starts with `ok` (on Python 3.12 or newer step 3 also prints many `SyntaxWarning: invalid escape sequence` lines first; they are harmless noise, see Verify).
 
 > Want an AI agent to do it for you? Paste this to Claude Code / Codex / Cursor:
 > "Read the 'For AI agents' section of https://github.com/tonydzi/memory-over-time and set it up for me."
@@ -50,7 +50,7 @@ For the full benchmark only: `PROXY` (in `code/bench_mot.py`, the OpenAI-compati
 python code/probes_ours.py
 python analysis/_test_make_numbers.py
 ```
-Expected: `probes_ours.py` exits 0 and prints JSON ending with `"passed": 3` and `"status": "PASS"`. The test exits 0 and every line starts with `ok`. Running `python analysis/make_numbers.py` recomputes `data/aggregates.json` from the stored receipts and ends with the line `ok systems ['ours', 'mem0', 'graphiti', 'full'] ...`. Floating-point noise in the last digits of a few time fields is normal.
+Expected: `probes_ours.py` exits 0 and prints JSON whose last fields are `"passed": 3` and `"status": "PASS"`. The test exits 0 and every result line starts with `ok`; on Python 3.12+ it is preceded by `SyntaxWarning: invalid escape sequence` lines on stderr from `analysis/make_numbers.py` (unescaped LaTeX backslashes in ordinary strings; a code issue, not a failed check). The exit code is what counts: both commands exit non-zero when a check fails. Running `python analysis/make_numbers.py` recomputes `data/aggregates.json` from the stored receipts and ends with the line `ok systems ['ours', 'mem0', 'graphiti', 'full'] ...`. Floating-point noise in the last digits of a few time fields is normal.
 
 ### Uninstall / rollback
 Delete the cloned folder and any venvs you made. If you ran `make_numbers.py`, undo its rewrite with `git checkout data/aggregates.json` and delete the generated `*.tex` files in the repo root.
