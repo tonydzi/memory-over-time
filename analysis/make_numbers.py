@@ -276,12 +276,12 @@ def tables(agg):
         note = "endpoint error, 0 episodes" if transport else ""
         rows.append(f"Graphiti + \\texttt{{{model}}} & {len(ok_runs)} & {fmt_runs(runs, 'graph')} & {fmt_runs(runs, 'search')} & {fmt_runs(runs, 'edges')} & {note} \\\\")
     n = A["ours"]["n"]
-    t = ["\\begin{table}[h]\centering\small",
-         f"\caption{{As-of questions over 15 real CRM changes ({n} questions). \emph{{Graph}}: correct live state read directly from the stored edges at date $D$; \emph{{Search}}: correct value among live facts returned by Graphiti search. One number per run.}}",
-         "\label{tab:asof}", "\\begin{tabular}{lccccl}", "\\toprule",
-         "System & Runs & Graph & Search & Edges & Note \\\\", "\midrule",
+    t = ["\\begin{table}[h]\\centering\\small",
+         f"\\caption{{As-of questions over 15 real CRM changes ({n} questions). \\emph{{Graph}}: correct live state read directly from the stored edges at date $D$; \\emph{{Search}}: correct value among live facts returned by Graphiti search. One number per run.}}",
+         "\\label{tab:asof}", "\\begin{tabular}{lccccl}", "\\toprule",
+         "System & Runs & Graph & Search & Edges & Note \\\\", "\\midrule",
          f"Our fact log (0 LLM, median {A['ours']['p50_ms']:.2f} ms) & 1 & {A['ours']['k']} & {A['ours']['k']} & n/a & deterministic \\\\",
-         *rows, "\\bottomrule", "\end{tabular}", "\end{table}"]
+         *rows, "\\bottomrule", "\\end{tabular}", "\\end{table}"]
     (KIT / "tab_asof.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
     names = dict(SYSTEMS)
     rows = []
@@ -294,31 +294,31 @@ def tables(agg):
         unk = pct(e["unknown_rate_mean"]) if e.get("unknown_rate_mean") is not None else ""
         rows.append(f"{names[s]} & {len(e['runs'])} & {runs} & {pct(e['mean'])} & {pci(e['majority']['k'], e['majority']['n'])} & {unk} & {ing or 'none'} \\\\")
     nq = next(iter(L.values()))["runs"]["r1"]["n"]
-    t = ["\\begin{table}[h]\centering\small",
-         f"\caption{{LoCoMo temporal-reasoning subset ({nq} questions, 10 dialogues, 272 sessions). Correct answers per run, mean accuracy over runs, question-level accuracy (a question counts as correct when the majority of runs answer it correctly) with 95\% Wilson interval over {nq} questions, share of `unknown' answers, and LLM extraction time summed over the 10 dialogues (minutes, mean over complete runs).}}",
-         "\label{tab:locomo}", "\\begin{tabular}{lcccccc}", "\\toprule",
-         "System & Runs & Correct per run & Mean \% & Majority \% [95\% CI] & Unknown \% & Ingest min \\\\", "\midrule",
-         *rows, "\\bottomrule", "\end{tabular}", "\end{table}"]
+    t = ["\\begin{table}[h]\\centering\\small",
+         f"\\caption{{LoCoMo temporal-reasoning subset ({nq} questions, 10 dialogues, 272 sessions). Correct answers per run, mean accuracy over runs, question-level accuracy (a question counts as correct when the majority of runs answer it correctly) with 95\\% Wilson interval over {nq} questions, share of `unknown' answers, and LLM extraction time summed over the 10 dialogues (minutes, mean over complete runs).}}",
+         "\\label{tab:locomo}", "\\begin{tabular}{lcccccc}", "\\toprule",
+         "System & Runs & Correct per run & Mean \\% & Majority \\% [95\\% CI] & Unknown \\% & Ingest min \\\\", "\\midrule",
+         *rows, "\\bottomrule", "\\end{tabular}", "\\end{table}"]
     P = agg["locomo_pairs"]
     if P:
-        t += ["", "\\begin{table}[h]\centering\small",
-              "\caption{Paired exact two-sided McNemar tests. Per run: $p$ for each run the two systems share. Question level: majority-of-runs correctness per question; questions only the first system answers, only the second, and $p$.}",
-              "\label{tab:mcnemar}", "\\begin{tabular}{lcccc}", "\\toprule", "Pair & $p$ per run & First only & Second only & $p$ (questions) \\\\", "\midrule"]
+        t += ["", "\\begin{table}[h]\\centering\\small",
+              "\\caption{Paired exact two-sided McNemar tests. Per run: $p$ for each run the two systems share. Question level: majority-of-runs correctness per question; questions only the first system answers, only the second, and $p$.}",
+              "\\label{tab:mcnemar}", "\\begin{tabular}{lcccc}", "\\toprule", "Pair & $p$ per run & First only & Second only & $p$ (questions) \\\\", "\\midrule"]
         for k, v in P.items():
             a, b = k.split("_vs_")
             fp = lambda p: "$<$0.001" if p < 0.001 else f"{p:.3f}"
             mj = v["majority"]
             t.append(f"{names[a]} vs {names[b]} & {', '.join(fp(r['p']) for _, r in sorted(v['per_run'].items()))} & {mj['a_only']} & {mj['b_only']} & {fp(mj['p'])} \\\\")
-        t += ["\\bottomrule", "\end{tabular}", "\end{table}"]
+        t += ["\\bottomrule", "\\end{tabular}", "\\end{table}"]
     (KIT / "tab_locomo.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
     if R:
         n = R["n_answerable"]
-        t = ["\\begin{table}[h]\centering\small",
-             f"\caption{{Plain retrieval on a frozen set of 40 real notes ({n} answerable questions, one supporting note each, gold SHA-256 prefix {R['gold_sha256'][:8]}): questions whose supporting note is in the top $k$. No temporal reasoning involved.}}",
-             "\label{tab:retrieval}", "\\begin{tabular}{lccc}", "\\toprule", "System & R@1 & R@5 & R@10 \\\\", "\midrule"]
+        t = ["\\begin{table}[h]\\centering\\small",
+             f"\\caption{{Plain retrieval on a frozen set of 40 real notes ({n} answerable questions, one supporting note each, gold SHA-256 prefix {R['gold_sha256'][:8]}): questions whose supporting note is in the top $k$. No temporal reasoning involved.}}",
+             "\\label{tab:retrieval}", "\\begin{tabular}{lccc}", "\\toprule", "System & R@1 & R@5 & R@10 \\\\", "\\midrule"]
         for name, v in R["systems"].items():
             t.append(f"{name} & {v['r@1']}/{n} & {v['r@5']}/{n} & {v['r@10']}/{n} \\\\")
-        t += ["\\bottomrule", "\end{tabular}", "\end{table}"]
+        t += ["\\bottomrule", "\\end{tabular}", "\\end{table}"]
         (KIT / "tab_retrieval.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
 
 
@@ -376,13 +376,13 @@ def perconv_table():
     syss = [s for s, _ in SYSTEMS if any((s, c) in acc for c in convs)]
     names = dict(SYSTEMS)
     nq = {c: acc[(syss[0], c)][1] // max(1, len(list(R.glob(f'jud_{syss[0]}_r*.jsonl')))) for c in convs}
-    t = ["\\begin{table}[h]\centering\small",
-         "\caption{Accuracy (\%) per LoCoMo dialogue, runs pooled. $n$: temporal questions in the dialogue.}",
-         "\label{tab:perconv}", "\\begin{tabular}{lr" + "c" * len(syss) + "}", "\\toprule",
-         "Dialogue & $n$ & " + " & ".join(names[s] for s in syss) + " \\\\", "\midrule"]
+    t = ["\\begin{table}[h]\\centering\\small",
+         "\\caption{Accuracy (\\%) per LoCoMo dialogue, runs pooled. $n$: temporal questions in the dialogue.}",
+         "\\label{tab:perconv}", "\\begin{tabular}{lr" + "c" * len(syss) + "}", "\\toprule",
+         "Dialogue & $n$ & " + " & ".join(names[s] for s in syss) + " \\\\", "\\midrule"]
     for c in convs:
         t.append(f"{c} & {nq[c]} & " + " & ".join(pct(acc[(s, c)][0] / acc[(s, c)][1]) for s in syss) + " \\\\")
-    t += ["\\bottomrule", "\end{tabular}", "\end{table}"]
+    t += ["\\bottomrule", "\\end{tabular}", "\\end{table}"]
     (KIT / "tab_perconv.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
 
 
